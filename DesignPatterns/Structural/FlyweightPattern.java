@@ -2,7 +2,7 @@ package DesignPatterns.Structural;
 
     /*
     Design Pattern is a way to save memory in applications that create a large number of similar
-    objects. Instead of creating a new object for each instance, the Flyweight pattern reuses
+    objects state. Instead of creating a new object for each instance, the Flyweight pattern reuses
     existing ones wherever possible, sharing common parts between objects.
     */
 

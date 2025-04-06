@@ -1,5 +1,11 @@
 package DesignPatterns.Creational;
 
+    /*
+    It is a way of organizing how you create groups of things that are related to each other.
+    It provides a set of rules or instructions that let you create different types of thing
+    This helps you keep everything organized and lets you switch between different types easily.
+    */
+
 //Create Abstract Factory Interface
 interface CarFactory {
     Car createCar();
@@ -40,11 +46,6 @@ interface Car {
     void assemble();
 }
 
-//Create Abstract Product
-interface CarSpecifications {
-    void display();
-}
-
 //Create Concrete Classes for Products
 class Seden implements Car {
 
@@ -63,13 +64,17 @@ class HatchBack implements Car {
     }
 }
 
+//Create Abstract Product
+interface CarSpecifications {
+    void display();
+}
+
 //Create Concrete Classes for Products
 class NorthAmericanSpecification implements CarSpecifications {
 
     @Override
     public void display() {
-        System.out.println("North America Car Specification: " +
-                "Safety features compliant with local regulations.");
+        System.out.println("North America Car Specification: " + "Safety features compliant with local regulations.");
     }
 }
 
@@ -78,25 +83,26 @@ class EuropeSpecifications implements CarSpecifications {
 
     @Override
     public void display() {
-        System.out.println("Europe Car Specification: Fuel efficiency " +
-                "and emissions compliant with EU standards.");
+        System.out.println("Europe Car Specification: Fuel efficiency " + "and emissions compliant with EU standards.");
     }
 }
-
 
 public class AbstractFactoryPattern {
     public static void main(String[] args) {
 
-        NorthAmericaCarFactory americaCarFactory = new NorthAmericaCarFactory();
-        Car northAmericanCar = americaCarFactory.createCar();
-        CarSpecifications northAmericanSpecifications = americaCarFactory.createSpecifications();
+        CarFactory factory = new NorthAmericaCarFactory();
+        Car northAmericanCar = factory.createCar();
+        CarSpecifications northAmericanSpecifications = factory.createSpecifications();
 
         northAmericanCar.assemble();
         northAmericanSpecifications.display();
         System.out.println("**************************");
 
-        EuropeCarFactory europeCarFactory = new EuropeCarFactory();
-        Car europeCar = europeCarFactory.createCar();
-        CarSpecifications europeSpecifications = europeCarFactory.createSpecifications();
+        CarFactory factory1 = new EuropeCarFactory();
+        Car europeCar = factory1.createCar();
+        CarSpecifications europeSpecifications = factory1.createSpecifications();
+
+        europeCar.assemble();
+        europeSpecifications.display();
     }
 }

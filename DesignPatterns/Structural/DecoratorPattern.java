@@ -1,11 +1,11 @@
 package DesignPatterns.Structural;
 
     /*
-    Design pattern to adding additional features or actions to an item without changing its structure is
-    possible with the Decorator Method Design Pattern. Consider that you want to add things
-    like milk, sugar, or whipped cream to your simple coffee. Instead of creating a whole new
-    coffee type for every possible combination, the decorator pattern lets you "wrap" the
-    plain coffee with add-ons
+    Design pattern to adding additional features or actions to an item without changing its
+    structure is possible with the Decorator Method Design Pattern. Consider that you want to
+    add things like milk, sugar, or whipped cream to your simple coffee. Instead of creating a
+    whole new coffee type for every possible combination, the decorator pattern lets you "wrap"
+    the plain coffee with add-ons
     */
 
 

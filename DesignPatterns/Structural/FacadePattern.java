@@ -1,5 +1,14 @@
 package DesignPatterns.Structural;
 
+    /*
+    Before we go into the details, visualize a structure. The house is the facade, it is
+    visible to the outside world, but beneath it is a working system of pipes, cables, and
+    other components that allow the building to run. It provides an easy-to-use interface so
+    that users may interact with the system.
+    Design Pattern provides a unified interface to a set of interfaces in a subsystem.
+    Facade defines a high-level interface that makes the subsystem easier to use.
+    */
+
 //Create common interface for Hotels many hotels which returns menus
 interface Hotels {
     Menus getMenus();

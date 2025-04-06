@@ -6,7 +6,6 @@ package DesignPatterns.Structural;
     structure of objects, where individual objects and composite objects share a common interface
     */
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +21,7 @@ interface Component {
 //Create Leaf Objects
 class Leaf implements Component {
 
-    private String name = "";
+    private final String name;
 
     public Leaf(String name) {
         this.name = name;
@@ -47,7 +46,7 @@ class Leaf implements Component {
 //Create Composite Object (contains the group of leafs and other component objects)
 class Composite implements Component {
 
-    String name = "";
+    String name;
     List<Component> children = new ArrayList<>();
 
     public Composite(String name) {
@@ -68,7 +67,7 @@ class Composite implements Component {
     public void display(int depth) {
         System.out.println("-".repeat(depth) + name);
         for (Component c : children) {
-            c.display(depth + 2);
+            c.display(depth + 1);
         }
     }
 }
@@ -91,6 +90,6 @@ public class CompositePattern {
         root.add(leaf);
         root.remove(leaf);
 
-        root.display(1);
+        root.display(2);
     }
 }

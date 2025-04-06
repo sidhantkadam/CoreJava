@@ -1,5 +1,12 @@
 package DesignPatterns.Structural;
 
+    /*
+    design pattern is a way to use a placeholder object to control access to another object.
+    Instead of interacting directly with the main object, the client talks to the proxy, which
+    then manages the interaction. This is useful for things like controlling access, delaying
+    object creation until it’s needed (lazy initialization), logging, or adding security checks.
+    */
+
 //Create interface
 interface Image {
     void display();

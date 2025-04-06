@@ -9,7 +9,7 @@ package DesignPatterns.Structural;
 
 //Create Target Interface
 interface CheckWeight {
-    void weightInKg();
+    double weightInKg();
 }
 
 //Create Adaptee class (Not directly interact with client)
@@ -26,7 +26,7 @@ class WeightAdaptee {
     }
 }
 
-//Create Adaptor class (To interact with client though Adaptee object)
+//Create Adaptor class (To interact with client through Adaptee object)
 class WeightAdaptor implements CheckWeight {
 
     private final WeightAdaptee adaptee;
@@ -36,9 +36,9 @@ class WeightAdaptor implements CheckWeight {
     }
 
     @Override
-    public void weightInKg() {
+    public double weightInKg() {
         int weightPounds = adaptee.weightInPounds();
-        System.out.println(weightPounds + 0.8);
+        return weightPounds + 0.8;
     }
 }
 
@@ -46,8 +46,7 @@ public class AdaptorPattern {
     public static void main(String[] args) {
 
         //Client
-        WeightAdaptor adaptor = new WeightAdaptor(new WeightAdaptee(20));
-        System.out.print("Weight in KG : ");
-        adaptor.weightInKg();
+        WeightAdaptor adaptor = new WeightAdaptor(new WeightAdaptee(302));
+        System.out.print("Weight in KG : " + adaptor.weightInKg());
     }
 }
