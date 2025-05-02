@@ -7,5 +7,17 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="com.fasterxml.jackson.databind" level="project" />
+    <orderEntry type="library" exported="" name="com.fasterxml.jackson.core" level="project" />
+    <orderEntry type="library" exported="" name="com.fasterxml.jackson.annotations" level="project" />
   </component>
 </module>

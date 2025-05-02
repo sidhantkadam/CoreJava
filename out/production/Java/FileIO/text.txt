@@ -1,3 +1,6 @@
-Java Java Java Spring SpringBoot Spring Spring Java Java Batch Batch
-Java Java Java Spring SpringBoot Spring Spring Java Java Batch Batch
-Java Java Java Spring SpringBoot Spring Spring Java Java Batch Batch
+this is a sample text file
+this file contains some repeated words
+repeated words like this and file appear multiple times
+this is to test the word counting program
+the program should identify the most repeated word in this file
+file this word repeated

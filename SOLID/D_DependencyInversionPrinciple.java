@@ -6,8 +6,6 @@ package SOLID;
     Depend on abstract class/interface, not concrete classes.
     */
 
-import java.util.Collection;
-import java.util.Collections;
 
 // Violates : High-level class depends on low-level implementation
 class LightBulb {

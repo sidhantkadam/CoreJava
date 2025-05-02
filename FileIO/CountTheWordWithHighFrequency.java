@@ -13,7 +13,7 @@ public class CountTheWordWithHighFrequency {
 
         Map<String, Integer> finalMap = new HashMap<>();
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("F:\\Java\\Projects\\Core Java\\FileIO\\text.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("G:\\BackEnd\\Projects\\Core Java\\FileIO\\text.txt"));
             String lineReader = reader.readLine();
 
             while (lineReader != null) {

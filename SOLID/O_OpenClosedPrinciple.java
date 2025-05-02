@@ -5,7 +5,7 @@ package SOLID;
     */
 
 //Violates: ProcessPayment class contains the method related to payment based on payment type,
-//If new paymentMethod is come this class need to change.
+//If new paymentMethod is come, this class need to change.
 class ProcessPayment {
     public void makePayment(String type) {
         if (type.equals("Card")) {
