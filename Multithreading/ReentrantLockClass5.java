@@ -1,9 +1,10 @@
 package Multithreading;
 
+import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 class Greeting {
-    ReentrantLock lock = new ReentrantLock();
+    Lock lock = new ReentrantLock();
 
     public void display(String name) {
         lock.lock();
@@ -35,12 +36,15 @@ class MyThread extends Thread {
 }
 
 public class ReentrantLockClass5 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Greeting greet = new Greeting();
         MyThread thread1 = new MyThread(greet, "Abhay");
         MyThread thread2 = new MyThread(greet, "Mayuri");
         thread1.start();
         thread2.start();
+
+        thread1.join();
+        thread2.join();
     }
 }

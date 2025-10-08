@@ -6,7 +6,6 @@ package SOLID;
     Depend on abstract class/interface, not concrete classes.
     */
 
-
 // Violates : High-level class depends on low-level implementation
 class LightBulb {
     public void turnOff() {
@@ -19,7 +18,7 @@ class LightBulb {
 }
 
 class Switch {
-    //Has-A or Aggregation
+    //Has-A or Association.Aggregation
     private LightBulb lightBulb;
 
     public Switch(LightBulb lightBulb) {

@@ -3,7 +3,7 @@ package Java8;
 import java.util.Arrays;
 import java.util.List;
 
-public class MultiplyAndSumList
+public class    MultiplyAndSumList
 {
     public static void main(String[] args)
     {

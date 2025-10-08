@@ -5,7 +5,7 @@ package Java8;
     Given a list of words, find the longest word(s) using Stream API.
 
     Example Input:
-    List<String> words = Arrays.asList("apple", "banana", "strawberry", "kiwi");
+        List<String> words = Arrays.asList("apple", "banana", "strawberry", "kiwi");
 
     Expected Output:
     ["strawberry"]

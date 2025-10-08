@@ -6,6 +6,7 @@ package SOLID;
 
 //Violates: ProcessPayment class contains the method related to payment based on payment type,
 //If new paymentMethod is come, this class need to change.
+
 class ProcessPayment {
     public void makePayment(String type) {
         if (type.equals("Card")) {
@@ -17,18 +18,18 @@ class ProcessPayment {
 }
 
 //Solution: We created the interface for each/new class with payment method
-interface payment {
+interface Payment {
     void makePayment(String type);
 }
 
-class CardPayment implements payment {
+class CardPayment implements Payment {
     @Override
     public void makePayment(String type) {
         System.out.println("Payment using : " + type);
     }
 }
 
-class CashPayment implements payment {
+class CashPayment implements Payment {
     @Override
     public void makePayment(String type) {
         System.out.println("Payment using :" + type);
@@ -37,10 +38,10 @@ class CashPayment implements payment {
 
 public class O_OpenClosedPrinciple {
     public static void main(String[] args) {
-        CardPayment cardPayment = new CardPayment();
+        Payment cardPayment = new CardPayment();
         cardPayment.makePayment("card");
 
-        CashPayment cashPayment = new CashPayment();
-        cardPayment.makePayment("cash");
+        Payment cashPayment = new CashPayment();
+        cashPayment.makePayment("cash");
     }
 }

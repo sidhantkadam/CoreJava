@@ -6,6 +6,13 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+    /*
+        Input: List<Integer> listOfIntegers = Arrays.asList(111, 222, 333, 111, 555, 333, 777, 222);
+        Output: 333
+                222
+                111
+    */
+
 public class DuplicateElementsFromArray {
     public static void main(String[] args) {
         List<Integer> listOfIntegers = Arrays.asList(111, 222, 333, 111, 555, 333, 777, 222);

@@ -1,6 +1,6 @@
 package InterviewOrExams;
 
-        //Not Solved
+//Not Solved
 
 public class Provatosoft_IndexesOfMaxRepeatingNumber {
     public static void main(String[] args) {
@@ -9,11 +9,9 @@ public class Provatosoft_IndexesOfMaxRepeatingNumber {
         int previousCount = arr[0];
         int count = 1;
         for (int i = 1; i < arr.length; i++) {
-            if(arr[i] == previousCount)
-            {
+            if (arr[i] == previousCount) {
                 count++;
-            }
-            else {
+            } else {
                 System.out.println(previousCount + ":" + count);
                 previousCount = arr[i];
                 count = 1;

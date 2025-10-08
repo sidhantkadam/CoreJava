@@ -6,7 +6,7 @@ import java.io.Serializable;
 public class Boy implements Serializable
 {
     @Serial
-    private static final long serialVersionUID = 2198102181460897974L;
+    private static final long serialVersionUID = 1L;
 
     private String name;
     private transient int  id;

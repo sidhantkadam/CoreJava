@@ -14,9 +14,10 @@ public class TechBulls {
             } else if (!Character.isLetter(s.charAt(f))) {
                 f++;
             } else {
-                char temp = s.charAt(f);
-                sb.setCharAt(f, s.charAt(l));
-                sb.setCharAt(l, temp);
+                char temp1 = s.charAt(f);
+                char temp2 = s.charAt(l);
+                sb.setCharAt(f, temp2);
+                sb.setCharAt(l, temp1);
                 f++;
                 l--;
             }

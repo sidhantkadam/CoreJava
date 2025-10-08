@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 
 public class DeserializationClass {
     public static void main(String[] args) {
-        try (FileInputStream input = new FileInputStream("F:/BackEnd/Projects/Core Java/SerializationAndDeserialization/output.txt");
+        try (FileInputStream input = new FileInputStream("output.txt");
              ObjectInputStream inputStream = new ObjectInputStream(input)) {
             Boy boy = (Boy) inputStream.readObject();
             boy.print();

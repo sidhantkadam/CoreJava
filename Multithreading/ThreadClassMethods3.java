@@ -23,16 +23,26 @@ class CheckThread extends Thread {
     public void run() {
         try {
             Thread.sleep(1000);
-            System.out.println("Thread is Running !");
+            Thread.yield();
+            System.out.println("Thread is Running ! " + Thread.currentThread().getName());
         } catch (InterruptedException e) {
-            System.out.println(e.getMessage());
+            Thread.currentThread().interrupt();
         }
     }
 }
 
 public class ThreadClassMethods3 {
     public static void main(String[] args) throws InterruptedException {
-        //run(), start(), join(), getName(), getState(), setPriority(), Constructor for setting name, interrupt(), setDaemon()
+        // run(),
+        // start(),
+        // join(),
+        // yield(),
+        // getName(),
+        // getState(),
+        // setPriority(),
+        // Constructor for setting name,
+        // interrupt(),
+        // setDaemon()
 
         MyThreadClass High = new MyThreadClass("High");
         MyThreadClass Low = new MyThreadClass("Low");
@@ -60,6 +70,10 @@ public class ThreadClassMethods3 {
 
         CheckThread thread = new CheckThread();
         thread.start();
+
+        CheckThread thread1 = new CheckThread();
+        thread1.start();
+
         thread.interrupt();
     }
 }

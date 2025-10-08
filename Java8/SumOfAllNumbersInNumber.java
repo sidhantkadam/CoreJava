@@ -8,7 +8,7 @@ public class SumOfAllNumbersInNumber {
 
         Integer sum = Arrays.stream(String.valueOf(num)
                         .split(""))
-                .mapToInt(Integer::parseInt)
+                .mapToInt(Integer::valueOf)
                 .sum();
         System.out.println(sum);
     }

@@ -1,4 +1,6 @@
-package OPPs;// Dynamic/CompileTime poly
+package OPPs;
+
+// Dynamic/Run-Time poly
 
 class Upper {
     void display() {
@@ -22,9 +24,9 @@ class Lower2 extends Upper {
 
 public class Poly_Method_Overriding {
     public static void main(String[] args) {
-        Upper upper = new Lower1();
+        Upper upper1 = new Lower1();
         Upper upper2 = new Lower2();
-        upper.display();    //output: Child 1, Lower class
-        upper2.display();   //output: Child 2, Lower class
+        upper1.display();    //output: Child 1, Lower class
+        upper2.display();    //output: Child 2, Lower class
     }
 }

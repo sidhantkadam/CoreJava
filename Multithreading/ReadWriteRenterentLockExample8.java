@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 class Counter {
     public int count = 0;
 
-    public ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+    public final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 
     public Lock readLock = lock.readLock();
     public Lock writeLock = lock.writeLock();

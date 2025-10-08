@@ -1,7 +1,10 @@
 package Java8;
 
-import java.util.LinkedHashMap;
+import java.security.Key;
+import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 
     /*
@@ -19,5 +22,15 @@ public class FindFirstNonRepeatingChar {
     public static void main(String[] args) {
         String input = "swiss";
 
+        Character key1 = input.chars()
+                .mapToObj(value -> (char) value)
+                .collect(Collectors.groupingBy(o -> o, LinkedHashMap::new, Collectors.counting()))
+                .entrySet()
+                .stream()
+                .filter(set -> set.getValue() == 1)
+                .findFirst()
+                .get()
+                .getKey();
+        System.out.println(key1);
     }
 }

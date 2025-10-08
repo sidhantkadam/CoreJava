@@ -3,12 +3,13 @@ package DesignPatterns.Behevioural;
 import java.util.ArrayList;
 import java.util.List;
 
-    /*
-    Design Pattern is a behavioral design pattern that defines a one-to-many dependency between objects.
-    When one object (the subject) changes state, all its dependents (observers) are notified and updated automatically.
-    It primarily deals with the interaction and communication between objects, specifically focusing on how objects
-    behave in response to changes in the state of other objects.
-    */
+/*
+Design Pattern is a behavioral design pattern that defines a one-to-many dependency between
+objects. When one object (the subject) changes state, all its dependents (observers) are
+notified and updated automatically. It primarily deals with the interaction and communication
+between objects, specifically focusing on how objects behave in response to changes in the
+state of other objects.
+*/
 
 //Create Subject Interface
 interface Subject {
@@ -97,6 +98,6 @@ public class ObserverPattern {
         weatherStation.addObserver(tvDisplay);
 
         //Simulating weather change
-        weatherStation.setWeather("Sunny");
+        weatherStation.setWeather("Rainy");
     }
 }

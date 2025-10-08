@@ -53,7 +53,7 @@ class Manager implements Restaurant {
 
     /*
     Solution:
-        We need to segregate the interfaces based on particular requirements
+    We need to segregate the interfaces based on particular requirements
     */
 
 interface waiterRequired {

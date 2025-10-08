@@ -12,12 +12,7 @@ interface Done
 public class SimpleFunctionExpression {
 
     public static void main(String[] args) {
-        Done done  = new Done() {
-            @Override
-            public void run() {
-                System.out.println("Hello");
-            }
-        };
+        Done done  = () -> System.out.println("Hello");
 
         done.run();
         done.execute();

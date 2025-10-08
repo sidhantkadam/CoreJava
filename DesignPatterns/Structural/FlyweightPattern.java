@@ -1,10 +1,10 @@
 package DesignPatterns.Structural;
 
-    /*
-    Design Pattern is a way to save memory in applications that create a large number of similar
-    objects state. Instead of creating a new object for each instance, the Flyweight pattern reuses
-    existing ones wherever possible, sharing common parts between objects.
-    */
+/*
+Design Pattern is a way to save memory in applications that create a large number of similar
+objects state. Instead of creating a new object for each instance, the Flyweight pattern reuses
+existing ones whenever possible, sharing common parts between objects.
+*/
 
 import java.util.HashMap;
 import java.util.Map;
@@ -48,7 +48,7 @@ class FolderIcon implements Icon {
 //Create Flyweight Factory
 class FlyweightFactory {
     // Flyweight factory to manage creation and retrieval of flyweight objects
-    private Map<String, Icon> iconCache = new HashMap<>();
+    private final Map<String, Icon> iconCache = new HashMap<>();
 
     public Icon getIcon(String key) {
         if (iconCache.containsKey(key)) {

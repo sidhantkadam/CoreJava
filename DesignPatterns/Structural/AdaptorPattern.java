@@ -3,7 +3,7 @@ package DesignPatterns.Structural;
     /*
     Two incompatible interfaces or systems can cooperate by using the adapter design pattern.
     Because of incompatible interfaces, it serves as a bridge between two classes that would
-    not otherwise be able to communicate.
+    not able to communicate.
     */
 
 

@@ -9,6 +9,11 @@ public class MultipleReentrantLockForSameThread7 {
     public static void callLock() {
         l.lock();
         System.out.println("Method is called..");
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         secondCallMethod();
         l.unlock();
     }

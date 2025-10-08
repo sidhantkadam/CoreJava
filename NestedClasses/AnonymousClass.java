@@ -1,14 +1,11 @@
 package NestedClasses;
 
-interface Greeting
-{
+interface Greeting {
     void sayHello();
 }
 
-public class AnonymousClass
-{
-    public static void main(String[] args)
-    {
+public class AnonymousClass {
+    public static void main(String[] args) {
 
         //Anonymous Class
         Greeting gret1 = new Greeting() {

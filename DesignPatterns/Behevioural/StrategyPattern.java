@@ -1,11 +1,11 @@
 package DesignPatterns.Behevioural;
 
-    /*
-    design pattern that allows you to define a family of algorithms or behaviors,
-    put each of them in a separate class, and make them interchangeable at runtime.
-    This pattern is useful when you want to dynamically change the behavior of a class
-    without modifying its code.
-    */
+/*
+design pattern that allows you to define a family of algorithms or behaviors,
+put each of them in a separate class, and make them interchangeable at runtime.
+This pattern is useful when you want to dynamically change the behavior of a class
+without modifying its code.
+*/
 
 //Create Strategy Interface, Common impl. for concrete strategy classes
 interface SortingStrategy {

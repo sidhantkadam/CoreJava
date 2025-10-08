@@ -1,16 +1,23 @@
 package OPPs;
 
-abstract class Main {
+    /*
+        Data Abstraction is the property by virtue of which only the essential details are
+        displayed to the user.
+    */
+
+abstract class Bike {
     abstract void brakes(String message);
 }
 
-class SportsBike extends Main {
+class SportsBike extends Bike {
+    @Override
     void brakes(String message) {
         System.out.println(message);
     }
 }
 
-class DirtBike extends Main {
+class DirtBike extends Bike {
+    @Override
     void brakes(String message) {
         System.out.println(message);
     }
@@ -18,10 +25,10 @@ class DirtBike extends Main {
 
 public class AbstractionExample {
     public static void main(String[] args) {
-        SportsBike sb = new SportsBike();
+        Bike sb = new SportsBike();
         sb.brakes("Sports Bike is stopped !");
 
-        DirtBike dt = new DirtBike();
+        Bike dt = new DirtBike();
         dt.brakes("Dirt Bike is stopped !");
     }
 }

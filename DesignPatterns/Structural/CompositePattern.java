@@ -1,10 +1,10 @@
 package DesignPatterns.Structural;
 
-    /*
-    design pattern that allows you to compose objects into tree structures to represent
-    part-whole hierarchies. The main idea behind the Composite Pattern is to build a tree
-    structure of objects, where individual objects and composite objects share a common interface
-    */
+/*
+design pattern that allows you to compose objects into tree structures to represent
+part-whole hierarchies. The main idea behind the Composite Pattern is to build a tree
+structure of objects, where individual objects and composite objects share a common interface
+*/
 
 import java.util.ArrayList;
 import java.util.List;

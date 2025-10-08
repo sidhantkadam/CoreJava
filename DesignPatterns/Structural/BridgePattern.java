@@ -1,8 +1,8 @@
 package DesignPatterns.Structural;
 
-    /*
-    The Bridge design pattern allows you to separate the abstraction from the implementation.
-    */
+/*
+The Bridge design pattern allows you to separate the abstraction from the implementation.
+*/
 
 //Create abstract class (contains the reference to the implementer)
 abstract class Vehicle {

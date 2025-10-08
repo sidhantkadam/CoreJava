@@ -1,4 +1,9 @@
-package OPPs;//   Static/Runtime Polymorphism
+package OPPs;
+//   Static/Compile-Time Polymorphism
+
+    /*
+        To differentiate between entities with the same name efficiently.
+    */
 
 class Call {
     static int Addition(int a, int b) {

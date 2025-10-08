@@ -1,5 +1,10 @@
 package OPPs;
 
+    /*
+        By which one class is allowed to inherit the features (fields and methods)
+        of another class
+    */
+
 class Student {
     public static String run() {
         return "OPPs.Student is present";
